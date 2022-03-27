@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //TODO 動いてない（初期データを日本語化する）
+        $this->app->singleton(FakerGenerator::class, function () {
+            return FakerFactory::create('ja_JP');
+        });
     }
 
     /**
