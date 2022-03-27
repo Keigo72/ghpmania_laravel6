@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>GHP Mania</title>
+        <title>MyPage</title>
         
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         
@@ -89,7 +89,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/mypage') }}" >MyPage</a>
+                        <a href="{{ url('/') }}" >Top</a>
                         <a href="{{ route('logout') }}" 
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
@@ -114,17 +114,17 @@
                     <h2>GHP Mania</h2>
                 </div>
 
-                <div class="links">
-                    <a href="{{ url('/home') }}">OpenChat</a>
-                    <a href="{{ url('/home') }}">Tips</a>
-                    <a href="{{ url('/question') }}">Question</a>
+                <!--<div class="links">-->
+                <!--    <a href="{{ url('/home') }}">OpenChat</a>-->
+                <!--    <a href="{{ url('/home') }}">Tips</a>-->
+                <!--    <a href="{{ url('/home') }}">Question</a>-->
                     <!--<a href="https://github.com/laravel/laravel">GitHub</a>-->
-                </div>
-                <br></br>
-                <div class="links">
-                    <a href="{{ url('/home') }}">Document</a>
-                    <a href="{{ url('/home') }}">News</a>
-                </div>
+                <!--</div>-->
+                <!--<br></br>-->
+                <!--<div class="links">-->
+                <!--    <a href="{{ url('/home') }}">Document</a>-->
+                <!--    <a href="{{ url('/home') }}">News</a>-->
+                <!--</div>-->
             </div>
         </div>
     </body>

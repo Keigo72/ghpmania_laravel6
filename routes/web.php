@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/mypage', 'HomeController@add')->name('mypage');
+Route::get('/question', 'QuestionController@add')->name('question');
 
 Auth::routes();
 
