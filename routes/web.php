@@ -20,6 +20,8 @@ Auth::routes();
 Route::get('/mypage', 'HomeController@add')->name('mypage');
 Route::get('/question', 'QuestionController@add')->name('question');
 
+Route::get('/admin', 'Admin\UserController@index')->name('admin.users');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
