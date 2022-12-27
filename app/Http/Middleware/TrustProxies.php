@@ -12,6 +12,9 @@ class TrustProxies extends Middleware
      *
      * @var array|string
      */
+     
+    // protected $proxies = "*";　これ触った
+    
     protected $proxies = "*";
 
     /**

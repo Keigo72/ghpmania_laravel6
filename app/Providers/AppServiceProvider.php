@@ -27,5 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        // 追加した
+        $this->app['request']->server->set('HTTPS','on');
     }
 }
